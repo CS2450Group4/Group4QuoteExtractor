@@ -71,6 +71,5 @@ class TextParser:
         if  len(stack) != 0:
             print ("Error: Unclosed quotation marks")
   
-    
-        else:
-            return quoteList
+ 
+        return quoteList

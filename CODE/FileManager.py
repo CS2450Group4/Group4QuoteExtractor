@@ -19,6 +19,7 @@ class FileManager:
 		fullText = []
 		for para in doc.paragraphs:
 			fullText.append(para.text)
+		
 		return '\n'.join(fullText)
 	
 	'''returns the text in the file at "file path"'''
@@ -36,7 +37,7 @@ class FileManager:
 		
 		return fileText
 		'''writes the given text into the file at file path(will over ride)'''
-	def saveText(text,filePath):
+	def saveText(text, filePath):
 		file=open(filePath,"w")
 		file.write(text)
 		file.close()
